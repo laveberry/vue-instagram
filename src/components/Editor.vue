@@ -1,7 +1,8 @@
 <template>
   <div>
     <input type="text" v-model="newTitle" placeholder="제목">
-      <p><img :src="imgSrc" alt=""></p>
+    <!-- v-bind:class="selectFilter"로 필터 실시간 변경 -->
+      <p><img :src="imgSrc" :class="selectFilter" alt=""></p>
 
       <!-- 필터 추가 -->
       <!-- <div class="filter-wrap"><p class="filter"><img :src="newImgSrc" alt=""></p></div> -->

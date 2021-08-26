@@ -1,7 +1,7 @@
 <template>
   <div style="width:500px; margin: 0 auto;">
 
-
+<!-- 이미지등록시 3번 적용되는거랑 필터적용 잡기 -->
     <div v-if="step==1">
       <!-- 파일업로드 -->
       <p style="text-align:center;">
@@ -12,7 +12,7 @@
       <!-- <Post v-bind:postData="postData"/> -->
       <Post v-for="(post, i) in postData" :key="i" v-bind:postData="post"/>
     </div>
-    
+
     <div v-if="step==2">
       <Editor :imgSrc="newImgSrc" v-bind:filters="filters"></Editor>
     </div>
@@ -36,10 +36,8 @@ export default {
       // newAuthor : '',
       // newCaption : '',
       // 필터 적용을 위한 데이터 생성
-      // ★필터 왜 적용이 안될까★★★★★★★★★★★★★★★
-      filters:["normal", 'Toaster', '_1977', 'aden', 'brannan', 'brooklyn', 'clarendon', 'moon', "perpetua",'xpro2', 'willow', "xpro2",
-        "stinson", "slumber"],
-      // selectFilter : ''
+      filters:["normal", 'toaster', '_1977', 'aden', 'brannan', 'brooklyn', 'clarendon', 'moon', "perpetua",'xpro2', 'willow', "xpro2", "stinson", "slumber"],
+      selectFilter : ''
     }
   },
   components : {
