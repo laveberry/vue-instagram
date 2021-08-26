@@ -7,7 +7,9 @@
       <p>{{postData[0].caption}}</p> -->
 
         <h2>{{postData.title}}</h2>
-      <p><img v-bind:src="postData.img" alt=""></p>
+      <!-- <p><img v-bind:src="postData.img" alt=""></p> -->
+      <!-- 필터 적용될 수 있게 class 추가 -->
+      <p><img :class="postData.filter" v-bind:src="postData.img" alt=""></p>
       <p>글쓴이 : {{postData.author}}</p>
       <p>{{postData.caption}}</p>
   </div>
