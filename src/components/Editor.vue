@@ -1,5 +1,10 @@
 <template>
   <div>
+      <!-- 
+          slot : props 정의 안하고 parent에서 child로 데이터 간단히 표현
+          child에서 사용, 하위 컴포넌트에게 HTML, Component 전달 가능
+           -->
+    <slot></slot>
     <input type="text" v-model="newTitle" placeholder="제목">
     <!-- v-bind:class="selectFilter"로 필터 실시간 변경 -->
       <p><img :src="imgSrc" :class="selectFilter" alt=""></p>

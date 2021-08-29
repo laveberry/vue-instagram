@@ -14,7 +14,11 @@
     </div>
 
     <div v-if="step==2">
-      <Editor :imgSrc="newImgSrc" v-bind:filters="filters"></Editor>
+      <Editor :imgSrc="newImgSrc" v-bind:filters="filters">
+        <!-- slot : props 정의 안하고 parent에서 child로 데이터 간단히 표현되도록함
+                    child의 slot컴포넌트 안에서 표현될 예정 -->
+        <h1>{{editorTitle}}</h1>
+      </Editor>
     </div>
 
   </div>
@@ -37,7 +41,8 @@ export default {
       // newCaption : '',
       // 필터 적용을 위한 데이터 생성
       filters:["normal", 'toaster', '_1977', 'aden', 'brannan', 'brooklyn', 'clarendon', 'moon', "perpetua",'xpro2', 'willow', "xpro2", "stinson", "slumber"],
-      selectFilter : ''
+      selectFilter : '',
+      editorTitle : '글쓰기 화면',
     }
   },
   components : {
