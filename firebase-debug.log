@@ -1,0 +1,87 @@
+[debug] [2021-08-30T07:50:34.540Z] ----------------------------------------------------------------------
+[debug] [2021-08-30T07:50:34.542Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\berry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-30T07:50:34.542Z] CLI Version:   9.16.6
+[debug] [2021-08-30T07:50:34.542Z] Platform:      win32
+[debug] [2021-08-30T07:50:34.542Z] Node Version:  v14.17.0
+[debug] [2021-08-30T07:50:34.543Z] Time:          Mon Aug 30 2021 16:50:34 GMT+0900 (대한민국 표준시)
+[debug] [2021-08-30T07:50:34.543Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-30T07:50:34.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-30T07:50:34.551Z] > authorizing via signed-in user (laveberry7@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\2WorkSpace\vue-instagram
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2021-08-30T07:55:00.521Z] ----------------------------------------------------------------------
+[debug] [2021-08-30T07:55:00.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\berry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-30T07:55:00.523Z] CLI Version:   9.16.6
+[debug] [2021-08-30T07:55:00.523Z] Platform:      win32
+[debug] [2021-08-30T07:55:00.523Z] Node Version:  v14.17.0
+[debug] [2021-08-30T07:55:00.525Z] Time:          Mon Aug 30 2021 16:55:00 GMT+0900 (대한민국 표준시)
+[debug] [2021-08-30T07:55:00.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-30T07:55:00.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-30T07:55:00.533Z] > authorizing via signed-in user (laveberry7@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\2WorkSpace\vue-instagram
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-08-30T07:56:34.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-08-30T07:56:35.027Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-08-30T07:56:35.027Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project vueinstagram-afa10 (VueInstagram) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-08-30T07:56:42.861Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-30T07:56:42.861Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-30T07:56:43.199Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 30 Aug 2021 07:56:43 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-30T07:56:43.231Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/vueinstagram-afa10/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-08-30T07:56:44.477Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 30 Aug 2021 07:56:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-08-30T07:56:44.479Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/vueinstagram-afa10/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-08-30T07:56:45.691Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 30 Aug 2021 07:56:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-30T07:56:55.694Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/vueinstagram-afa10/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-08-30T07:56:56.761Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 30 Aug 2021 07:56:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-08-30T07:56:56.764Z] > refreshing access token with scopes: []
+[debug] [2021-08-30T07:56:56.764Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-30T07:56:56.986Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 30 Aug 2021 07:56:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-30T07:56:57.008Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueinstagram-afa10 [none]
+[debug] [2021-08-30T07:56:57.406Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueinstagram-afa10 200
+[debug] [2021-08-30T07:56:57.406Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueinstagram-afa10 {"projectId":"vueinstagram-afa10","projectNumber":"266225947512","displayName":"VueInstagram","name":"projects/vueinstagram-afa10","resources":{"hostingSite":"vueinstagram-afa10"},"state":"ACTIVE"}
