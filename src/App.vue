@@ -28,16 +28,17 @@
 </template>
 
 <script>
-import data from './assets/data.js';
+// import data from './assets/data.js';
 import Post from './components/Post.vue';
 import Editor from './components/Editor.vue';
 import EventBus from './assets/EventBus.js';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   data(){
     return {
-      postData : data,
+      // postData : data,
+      postData : this.$store.getters.POSTDATA,
       step : 1,
       newImgSrc : '',
       // newTitle : '',
@@ -46,7 +47,7 @@ export default {
       // 필터 적용을 위한 데이터 생성
       filters:["normal", 'toaster', '_1977', 'aden', 'brannan', 'brooklyn', 'clarendon', 'moon', "perpetua",'xpro2', 'willow', "xpro2", "stinson", "slumber"],
       selectFilter : '',
-      editorTitle : '글쓰기 화면',
+      // editorTitle : '글쓰기 화면', //store로 이동
     }
   },
   components : {
@@ -74,11 +75,12 @@ export default {
     getMore(){
       //get방식 ajax 통신
       //unshift는 상단에 리스트를 추가, push는 하단에 리스트를 추가
-      axios.get('moreData.json').then( moreData => {
-        this.postData.push(moreData.data[0]);
-      }).catch( err => {
-        console.log(err);
-      });
+      // axios.get('moreData.json').then( moreData => {
+      //   this.postData.push(moreData.data[0]);
+      // }).catch( err => {
+      //   console.log(err);
+      // });
+      this.$store.dispatch('GET_POSTDATA');
     }
   },
   //EventBus로 받아온 데이터 작업, vue 라이프 사이클
@@ -88,12 +90,25 @@ export default {
       this.selectFilter = filter;
     });
 
-    EventBus.$on('new-data', (newData) => {
-      //unshift : 배열 맨앞에 데이터 추가해주기
-      console.log('newData', newData);
-      data.unshift(newData);
+    //업데이트
+    // EventBus.$on('new-data', (newData) => {
+    //   //unshift : 배열 맨앞에 데이터 추가해주기
+    //   console.log('newData', newData);
+    //   // data.unshift(newData);
+    //   this.postData.unshift(newData);
+    //   this.step = 1;
+    // });
+    EventBus.$on('new-data', (uploadData)=>{
+      this.$store.commit('SET_POSTDATA', uploadData);
+      //   this.postData.unshift(uploadData);
       this.step = 1;
-    });
+    })
+  },
+  //store에 저장된 데이터 쉽게 꺼내기
+  computed : {
+    editorTitle(){
+      return this.$store.state.editorTitle;
+    }
   }
 }
 </script>
