@@ -21,6 +21,9 @@
       </Editor>
     </div>
 
+    <!-- ajax 통신연결 -->
+    <button v-on:click="getMore">더보기</button>
+
   </div>
 </template>
 
@@ -29,6 +32,7 @@ import data from './assets/data.js';
 import Post from './components/Post.vue';
 import Editor from './components/Editor.vue';
 import EventBus from './assets/EventBus.js';
+import axios from 'axios';
 
 export default {
   data(){
@@ -66,6 +70,16 @@ export default {
     //   console.log(e.target.className);
     //   this.selectFilter = e.target.className;
     // }
+
+    getMore(){
+      //get방식 ajax 통신
+      //unshift는 상단에 리스트를 추가, push는 하단에 리스트를 추가
+      axios.get('moreData.json').then( moreData => {
+        this.postData.push(moreData.data[0]);
+      }).catch( err => {
+        console.log(err);
+      });
+    }
   },
   //EventBus로 받아온 데이터 작업, vue 라이프 사이클
   mounted(){
