@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 import data from '../data.js';
 import axios from 'axios';
 
-
+// store : 함수, 변수 지정&관리
 Vue.use(Vuex);
 
 export let store = new Vuex.Store({

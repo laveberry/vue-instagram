@@ -2,6 +2,7 @@
 vue create vue-instagram
 
 # 설정 빌드
+npm install
 npm run build
 
 # ajax
