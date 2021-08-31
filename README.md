@@ -1,9 +1,13 @@
 # vue-instagram
+vue create vue-instagram
+
+# 설정 빌드
+npm run build
 
 # ajax
 npm install axios
 
-# state
+# vuex (store)
 npm install vuex
 
 # 배포, firebase CLI
@@ -12,3 +16,9 @@ firebase login
 firebase init
 (나중에 다시할것)
 https://okayoon.tistory.com/entry/vuejs%EB%A1%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84-firebase%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%B4%EB%B3%B4%EA%B8%B0?category=793187
+
+# vee-validate
+npm install vee-validate@next --save
+
+# router
+npm install vue-router
