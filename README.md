@@ -23,3 +23,7 @@ npm install vee-validate@next --save
 
 # router
 npm install vue-router
+
+# Form 검증위한 모듈
+vee-validate
+
