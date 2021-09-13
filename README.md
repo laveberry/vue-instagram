@@ -27,3 +27,9 @@ npm install vue-router
 # Form 검증위한 모듈
 vee-validate
 
+# 스프링부트 연결
+# ajax요청시 사용 모듈
+npm install request
+npm install path
+
+https://blog.naver.com/PostView.nhn?blogId=dktmrorl&logNo=222005120831
