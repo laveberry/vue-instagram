@@ -5,6 +5,8 @@ vue create vue-instagram
 npm install
 npm run build
 
+npm build -> gradle build
+
 # ajax
 npm install axios
 

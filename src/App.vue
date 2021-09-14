@@ -33,6 +33,7 @@ import Post from './components/Post.vue';
 import Editor from './components/Editor.vue';
 import EventBus from './assets/EventBus.js';
 // import axios from 'axios';
+import request from "request"; //백단연결
 
 export default {
   data(){
@@ -85,6 +86,12 @@ export default {
   },
   //EventBus로 받아온 데이터 작업, vue 라이프 사이클
   mounted(){
+    // 백단 연결요청 test
+    request('http://localhost:8080/api/hello', function(error, response, body){
+      window.console.log('error', error);
+      window.console.log('statuseCode:', response && response.statusCode);
+      window.console.log('body', body);
+    });
     // EventBus.$on('데이터를 전송하는 이름', (전송된 데이터) => { });
     EventBus.$on('select-filter', (filter) =>  {
       this.selectFilter = filter;
