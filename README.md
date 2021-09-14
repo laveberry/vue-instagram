@@ -27,7 +27,7 @@ npm install vue-router
 # Form 검증위한 모듈
 vee-validate
 
-# 스프링부트 연결
+# 스프링부트 연결, src 안에 프로젝트 생성 및 설치
 # ajax요청시 사용 모듈
 npm install request
 npm install path
